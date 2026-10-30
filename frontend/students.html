@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f7fb"><title>Students | CampusCore</title><link rel="stylesheet" href="/static/css/app.css"></head>
+<body data-page="students">
+  <div class="app-shell"><aside class="sidebar">
+    <a class="brand" href="/"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Core</span></span></a><div class="nav-caption">WORKSPACE</div>
+    <nav class="main-nav" aria-label="Main navigation"><a class="nav-link" href="/"><span class="nav-icon">⌂</span>Overview</a><a class="nav-link active" href="/students.html"><span class="nav-icon">♙</span>Students</a><a class="nav-link" href="/departments.html"><span class="nav-icon">▦</span>Departments</a><a class="nav-link" href="/courses.html"><span class="nav-icon">▤</span>Courses &amp; subjects</a><a class="nav-link" href="/attendance.html"><span class="nav-icon">◷</span>Attendance</a><a class="nav-link" href="/results.html"><span class="nav-icon">✳</span>Results</a></nav>
+    <div class="nav-caption nav-caption-bottom">INSIGHTS</div><nav class="main-nav"><a class="nav-link" href="/reports.html"><span class="nav-icon">▥</span>Reports</a></nav>
+    <div class="sidebar-bottom"><div class="sidebar-help"><span class="help-icon">?</span><span><b>Need a hand?</b><small>Explore your student records</small></span></div><div class="user-card"><span class="avatar" id="user-avatar">A</span><span class="user-meta"><b id="user-name">Administrator</b><small id="user-email"></small></span><button class="icon-button logout-button" title="Sign out" aria-label="Sign out">↗</button></div></div>
+  </aside><main class="main-content"><header class="topbar"><button class="icon-button menu-button" aria-label="Toggle navigation">☰</button><div class="breadcrumb">Workspace <span>/</span> <b>Students</b></div><div class="topbar-right"><span class="today-label" id="today-label"></span><span class="avatar avatar-small">A</span></div></header>
+    <section class="page-content"><div class="page-heading"><div><span class="eyebrow">PEOPLE DIRECTORY</span><h1>Students<span class="heading-dot">.</span></h1><p>Manage student profiles, enrollment and academic status.</p></div><button class="button button-primary" data-action="create-student"><span>＋</span> Add student</button></div>
+      <div class="list-summary" id="students-summary"></div>
+      <section class="panel table-panel"><div class="table-toolbar"><div class="search-wrap"><span>⌕</span><input id="student-search" type="search" placeholder="Search by name, ID or email" aria-label="Search students"></div><select id="department-filter" aria-label="Filter by department"><option value="">All departments</option></select><select id="course-filter" aria-label="Filter by course"><option value="">All courses</option></select><select id="status-filter" aria-label="Filter by status"><option value="">All statuses</option><option>Active</option><option>Inactive</option><option>Graduated</option><option>Suspended</option></select></div><div id="students-table" class="table-container"></div></section>
+    </section>
+  </main></div><div id="modal-root"></div><div id="toast-root" class="toast-root" aria-live="polite"></div><script src="/static/js/app.js" defer></script>
+</body></html>

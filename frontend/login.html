@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6ff">
+  <title>Welcome | CampusCore</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body class="login-page">
+  <main class="auth-layout">
+    <section class="auth-showcase" aria-label="CampusCore overview">
+      <a class="brand auth-brand" href="/login.html"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Core</span></span></a>
+      <div class="showcase-copy">
+        <span class="showcase-kicker"><span></span> YOUR CAMPUS, IN SYNC</span>
+        <h1>Big goals.<br><span>Bright futures.</span></h1>
+        <p>One calm, colorful space to bring your student records, academics and campus community together.</p>
+        <div class="showcase-stats" aria-label="Platform highlights">
+          <div class="showcase-stat"><span class="stat-orb orb-lilac">✳</span><span><b>Stay organized</b><small>Every detail, in its place</small></span></div>
+          <div class="showcase-stat"><span class="stat-orb orb-peach">↗</span><span><b>See progress</b><small>From attendance to results</small></span></div>
+        </div>
+      </div>
+      <div class="showcase-decoration decoration-one"></div>
+      <div class="showcase-decoration decoration-two"></div>
+      <div class="showcase-note"><span>✦</span> A little more clarity, every day.</div>
+    </section>
+    <section class="auth-panel" aria-label="Account access">
+      <div class="auth-mobile-brand"><a class="brand" href="/login.html"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Core</span></span></a></div>
+      <div class="auth-card">
+        <div class="auth-switch" role="tablist" aria-label="Account access">
+          <button class="auth-tab active" id="signin-tab" type="button" role="tab" aria-selected="true" aria-controls="login-form">Sign in</button>
+          <button class="auth-tab" id="signup-tab" type="button" role="tab" aria-selected="false" aria-controls="signup-form">Create account</button>
+        </div>
+        <div class="login-intro">
+          <span class="eyebrow" id="auth-eyebrow">STUDENT ADMINISTRATION</span>
+          <h2 id="auth-title">Welcome back</h2>
+          <p id="auth-description">Sign in to manage your campus, students and academic records.</p>
+        </div>
+        <div id="login-error" class="notice notice-error" role="alert" hidden></div>
+        <form id="login-form" class="stack-form auth-form" role="tabpanel" aria-labelledby="signin-tab">
+          <label>Email address<input name="email" type="email" autocomplete="username" placeholder="you@campus.edu" maxlength="255" required></label>
+          <label>Password<input name="password" type="password" autocomplete="current-password" placeholder="Your password" required></label>
+          <button class="button button-primary button-wide auth-submit" type="submit"><span>Sign in to dashboard</span><span aria-hidden="true">→</span></button>
+        </form>
+        <form id="signup-form" class="stack-form auth-form" role="tabpanel" aria-labelledby="signup-tab" hidden>
+          <label>Full name<input name="full_name" type="text" autocomplete="name" placeholder="Your name" maxlength="120" required></label>
+          <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@campus.edu" maxlength="255" required></label>
+          <label>Password<input name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required></label>
+          <label>Confirm password<input name="confirm_password" type="password" autocomplete="new-password" placeholder="Enter your password again" minlength="8" required></label>
+          <button class="button button-primary button-wide auth-submit" type="submit"><span>Create administrator account</span><span aria-hidden="true">→</span></button>
+        </form>
+        <p class="login-footnote" id="auth-footnote">Secure access for campus administrators.</p>
+      </div>
+      <p class="auth-copyright">CampusCore <span>·</span> Made for the people who make a campus.</p>
+    </div>
+  </main>
+  <script src="/static/js/login.js" defer></script>
+</body>
+</html>

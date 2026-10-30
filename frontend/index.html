@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f7fb"><title>Overview | CampusCore</title><link rel="stylesheet" href="/static/css/app.css"></head>
+<body data-page="dashboard">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/"><span class="brand-mark">C</span><span>Campus<span class="brand-light">Core</span></span></a>
+      <div class="nav-caption">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="/"><span class="nav-icon">⌂</span>Overview</a>
+        <a class="nav-link" href="/students.html"><span class="nav-icon">♙</span>Students</a>
+        <a class="nav-link" href="/departments.html"><span class="nav-icon">▦</span>Departments</a>
+        <a class="nav-link" href="/courses.html"><span class="nav-icon">▤</span>Courses &amp; subjects</a>
+        <a class="nav-link" href="/attendance.html"><span class="nav-icon">◷</span>Attendance</a>
+        <a class="nav-link" href="/results.html"><span class="nav-icon">✳</span>Results</a>
+      </nav>
+      <div class="nav-caption nav-caption-bottom">INSIGHTS</div>
+      <nav class="main-nav"><a class="nav-link" href="/reports.html"><span class="nav-icon">▥</span>Reports</a></nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-help"><span class="help-icon">?</span><span><b>Need a hand?</b><small>Explore your student records</small></span></div>
+        <div class="user-card"><span class="avatar" id="user-avatar">A</span><span class="user-meta"><b id="user-name">Administrator</b><small id="user-email"></small></span><button class="icon-button logout-button" title="Sign out" aria-label="Sign out">↗</button></div>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><button class="icon-button menu-button" aria-label="Toggle navigation">☰</button><div class="breadcrumb">Workspace <span>/</span> <b>Overview</b></div><div class="topbar-right"><span class="today-label" id="today-label"></span><span class="avatar avatar-small">A</span></div></header>
+      <section class="page-content">
+        <div class="page-heading"><div><span class="eyebrow">CAMPUS AT A GLANCE</span><h1>Good to see you<span class="heading-dot">.</span></h1><p>Here’s what’s happening across your institution today.</p></div><a class="button button-secondary" href="/reports.html"><span>↓</span> Export report</a></div>
+        <div class="stats-grid" id="dashboard-stats"></div>
+        <div class="dashboard-grid">
+          <section class="panel chart-panel"><div class="panel-heading"><div><h2>Admissions overview</h2><p>New student enrollments over the last six months</p></div><span class="panel-tag">6 months</span></div><div class="chart-wrap"><canvas id="admissions-chart" aria-label="Admissions over the last six months"></canvas></div></section>
+          <section class="panel attendance-panel"><div class="panel-heading"><div><h2>Attendance snapshot</h2><p>Attendance records from the last 30 days</p></div><a class="text-link" href="/attendance.html">View all <span>→</span></a></div><div id="attendance-summary" class="attendance-summary"></div></section>
+          <section class="panel recent-panel"><div class="panel-heading"><div><h2>Recent admissions</h2><p>Your newest students, all in one place</p></div><a class="text-link" href="/students.html">All students <span>→</span></a></div><div id="recent-students"></div></section>
+          <section class="panel performance-panel"><div class="panel-heading"><div><h2>Academic performance</h2><p>Average score across recorded results</p></div><span class="panel-tag">All time</span></div><div class="performance-content" id="performance-summary"></div></section>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div id="modal-root"></div><div id="toast-root" class="toast-root" aria-live="polite"></div>
+  <script src="/static/js/app.js" defer></script>
+</body>
+</html>
